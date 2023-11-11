@@ -1,0 +1,155 @@
+Q1. Explain the role of operators in JavaScript. Why are they essential in programming?
+Answer:-
+Operators in JavaScript are symbols or keywords that perform operations on operands,
+ which can be variables, values, or expressions. They play a crucial role in programming
+ by allowing you to manipulate data and perform various computations.
+ Here are some key aspects of the role of operators in JavaScript:
+ 
+
+-> Operators are essential in programming because they enable you to perform a wide range of operations on data,
+ facilitating the creation of complex algorithms and logic. They are the building blocks that programmers
+use to express computations and relationships between variables, leading to the development of robust and 
+dynamic software.
+
+Q2. Describe the categorization of operators in JavaScript based on their functionality. Provide examples for
+each category.
+Answer
+Operators in JavaScript can be categorized based on their functionality. Here are the main categories:
+
+1.Arithmetic Operations-
+ Example 
+ let result = 10 + 5; // result is 15
+ 2.Comparison Operators-
+ Example
+ let isEqual = (5 === "5"); // isEqual is false (strict equality)
+3.Logical Operators-
+Example
+let isTrue = (true && false); // isTrue is false (logical AND)
+4.Assignment Operators:
+Example
+let x = 10;
+x += 5; // x is now 15 (same as x = x + 5)
+5.Increment and Decrement Operators-
+Example
+let count = 0;
+count++; // count is now 1
+6.Bitwise Operators-
+Example
+let result = 5 & 3; // result is 1 (bitwise AND)
+
+Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.
+Answer
+1.Unary Operators:
+
+Definition: Unary operators are operators that work with a single operand.
+Example
+// Unary Minus (-)
+let x = 5;
+let y = -x; // y is -5
+
+// Unary Plus (+)
+let z = +x; // z is 5 (no change, but can be used to convert to a number)
+
+// Increment (++)
+let count = 10;
+count++; // count is now 11
+
+// Decrement (--)
+let total = 20;
+total--; // total is now 19
+2.Binary Operators:
+
+Definition: Binary operators are operators that work with two operands.
+Example
+// Addition (+)
+let sum = 5 + 3; // sum is 8
+
+// Subtraction (-)
+let difference = 10 - 4; // difference is 6
+
+// Multiplication (*)
+let product = 2 * 6; // product is 12
+
+// Division (/)
+let quotient = 8 / 2; // quotient is 4
+
+// Assignment (=)
+let variable = 7; // assigning the value 7 to the variable
+
+3.Ternary Operator:
+
+Definition: The ternary operator is the only ternary operator in JavaScript. 
+It takes three operands and is often used as a shorthand for an if-else statement.
+Example
+let age = 20;
+let status = (age >= 18) ? 'Adult' : 'Minor';
+// If age is greater than or equal to 18, status is 'Adult', otherwise 'Minor'
+
+-> In the ternary example, the condition (age >= 18) is evaluated. If it is true, 
+the expression before the : is executed; otherwise, the expression after the : is executed. 
+This provides a concise way to write simple conditional statements.
+
+Q4. Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts
+important?
+Answer
+1.Precedence:
+Definition: Precedence determines the order in which operators are evaluated in an expression.
+Operators with higher precedence are evaluated first.
+Example
+let result = 2 + 3 * 4;
+// Multiplication (*) has higher precedence than addition (+)
+// 3 * 4 is evaluated first, then 2 + (result of 3 * 4)
+// result is 14
+-> Operators with higher precedence are performed first, and grouping with parentheses can be used to override
+ the default precedence.
+
+ 2.Associativity:
+Definition: Associativity determines the order of evaluation when operators with the same precedence appear in an
+ expression. It can be left-to-right or right-to-left.
+
+ Why Understanding These Concepts is Important:
+ 1.Correctness of Expressions:
+ 2.Code Readability:
+ 3.Avoiding Unintended Side Effects:
+ 4.Debugging:
+ 5.Efficient Coding:
+ Example
+ let a = 5, b = 3, c = 2;
+let result = a * b + c;
+// Multiplication (*) has higher precedence than addition (+)
+// result is (a * b) + c
+// result is 17
+
+Q5. Write a JavaScript program that calculates the simple interest using the formula 
+Simple interest =(principal * rate * time) / 100.
+let pAmount=1000;
+let rate=5;
+let time=2;
+let intrest=(pAmount*rate*time)/100;
+console.log("Simple intrest is : "+ intrest);
+OUTPUT:-
+PS C:\Users\Tausif\Desktop\JavaScript Operation> node SimpleIntrest.js
+Simple intrest is : 100
+PS C:\Users\Tausif\Desktop\JavaScript Operation> 
+
+
+Q6. Write a Javascript program to calculate the Body Mass Index (BMI) using the 
+formula BMI = weight (kg)/height * height.
+let weight=60;//weight in kg
+let height=75//height in cm
+let bmiResult=weight/(height*height);
+console.log("Body Mass index is :"+bmiResult);
+OUTPUT:
+PS C:\Users\Tausif\Desktop\JavaScript Operation> node calculateBMI.js
+Body Mass index is :0.010666666666666666
+PS C:\Users\Tausif\Desktop\JavaScript Operation> 
+
+
+
+
+
+
+Q7. Write a program in JavaScript to calculate the area of a circle given its radius 
+value of 10. Use appropriate arithmetic operators.
+
+
